@@ -1,2 +1,2 @@
 # SparesShop
-Training site htmlacademy implemented by Godunov Vladislav
+Training site implemented by Godunov Vladislav
