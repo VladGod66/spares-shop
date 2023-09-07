@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин запчастей.</title>
+    <title>Интернет-магазин автозапчастей, главная страница.</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -11,37 +13,55 @@
     <div class="page__container">
       <header class="header">
         <a class="header__logo">
-          <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="">
+          <img src="img/logo.svg" width="102" height="52" alt="">
         </a>
-        <nav class="header__nav nav header__nav--opened">
-          <button class="nav__toggle nav__toggle--off" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <nav class="header__nav nav">
           <div class="nav__wrapper">
             <ul class="nav__list nav-list">
-              <li class="nav-list__item nav-list__item--current">
-                <a class="nav-list__link nav-list__link--current">
-                  Главная
+              <li class="nav-list__item nav-list__item--not-current">
+                <a class="nav-list__link nav-list__link--not-current">
+                  Магазины
                 </a>
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__link--not-current" href="#">
-                  Фото и видео
+                  Акции
                 </a>
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__link--not-current"  href="#">
-                  Форма отзыва
+                  Доставка и оплата
                 </a>
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__link--not-current"  href="#">
-                  HTML Academy
+                  Санкт-Петербург, ул<br>Большая Конюшенная, д 18
+                </a>
+              </li>
+            </ul>
+            <ul class="nav__list-user nav-user">
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">
+                  <span class="visually-hidden">Избранное.</span>
+                </a>
+              </li>
+              <li class="nav-user__item">
+                <a class="nav-user__link" href="#">
+
+                  <span class="visually-hidden">Вход/регистрация.</span>
+                </a>
+              </li>
+              <li class="nav-user__item">
+                <a class="nav-user__link">
+                  <span class="nav-user__goods">1</span>
+                <span class="visually-hidden" href="#">Корзина.</span>
                 </a>
               </li>
             </ul>
           </div>
+
         </nav>
+
       </header>
 
       <main class="main">
