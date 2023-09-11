@@ -35,7 +35,7 @@
               </li>
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__link--not-current"  href="#">
-                  Санкт-Петербург, ул<br>Большая Конюшенная, д 18
+                  Санкт-Петербург, ул<br>Большая Конюшенная, д 19
                 </a>
               </li>
             </ul>
@@ -108,10 +108,52 @@
       </header>
 
       <main class="main">
+        <section class="promo">
+          <h1 class="visually-hidden">Предлагаем запчасти на все виды автомобилей.</h1>
+          <img class="promo__image" src="../img/promo.jpg" width="870" height="397" alt="Фото генератора на фиолетово-орпнжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+          <button class="promo__button-left" type="button">
+            <span class="visually-hidden">Кнопка назад.</span>
+          </button>
+          <button class="promo__button-right" type="button">
+            <span class="visually-hidden">Кнопка вперёд.</span>
+          </button>
+          <div class="promo__promo-wrapper promo-wrapper">
+            <span class="promo-wrapper__action">Акция</span>
+            <span class="promo-wrapper__new-price">200 ₽</span>
+            <span class="promo-wrapper__old-price">500 ₽</span>
+            <img class="promo-wrapper__image" src="../img/lamp.png" width="150" height="187" alt="">
+            <span class="promo-wrapper__name">Лампочка мини...</span>
+            <div class="promo-wrapper__timer countdown">
+              <span class="countdown__text">До конца акции осталось:</span>
+              <div class="countdown__wrapper">
+                <div class="countdown__item">
+                  <span id="days">00</span>
+                  <span class="countdown__label">дней</span>
+                </div>
+                <div class="countdown__item">
+                  <span id="hours">00</span>
+                  <span>:</span>
+                  <span class="countdown__label">часов</span>
+                </div>
+                <div class="countdown__item">
+                  <span id="minutes">00</span>
+                  <span>:</span>
+                  <span class="countdown__label">минут</span>
+                </div>
+                <div class="countdown__item">
+                  <span id="seconds">00</span>
+                  <span class="countdown__label">секунд</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
 
 
       </main>
 
     </div>
+  <script src="js/counter.js"></script>
   </body>
 </html>
