@@ -14,6 +14,15 @@
   border-radius: 50%;
   border: none;
   opacity: 30%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .promo::before {
@@ -27,15 +36,6 @@
   background-image: url("../img/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 70%;
-  }
-
-  &:active {
-    opacity: 50%;
-  }
 }
 
 .promo__button-right {
@@ -90,9 +90,10 @@
 
 .promo-wrapper__old-price {
   position: absolute;
-  left: 190px;
+  left: 185px;
   top: 40px;
   z-index: 1;
+  font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 20px;
   color: #a8a8a8;
 }
@@ -106,10 +107,11 @@
   box-sizing: border-box;
   padding-top: 2px;
   transform: rotate(-90deg);
+  font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   text-align: center;
   color: #ffffff;
   background: linear-gradient(to right, #9710e9, #fd8d43);
@@ -126,15 +128,23 @@
   transform: rotate(-20grad);
 }
 
-.promo-wrapper__image {
+.promo-wrapper__link {
   position: absolute;
   left: 50px;
   top: 53px;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .promo-wrapper__name {
   position: absolute;
-  left: 49px;
+  left: 40px;
   top: 250px;
   font-size: 23px;
   font-weight: bold;
@@ -169,8 +179,10 @@
 .countdown__item {
   display: block;
   width: 40px;
+  height: 40px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .countdown__label {
