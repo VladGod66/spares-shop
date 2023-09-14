@@ -12,29 +12,30 @@
   <body class="page">
     <div class="page__container">
       <header class="header">
+        <h1 class="visually-hidden">Интернет-магазин Автозапчастей: Главная</h1>
         <a class="header__logo">
-          <img src="img/logo.svg" width="102" height="52" alt="">
+          <img src="img/logo.svg" width="102" height="52" alt="Логотип интернет-магазина запчастей: покрышка с крыльями.">
         </a>
         <nav class="header__nav nav">
           <div class="nav__wrapper">
             <ul class="nav__list nav-list">
-              <li class="nav-list__item nav-list__item--not-current">
-                <a class="nav-list__link nav-list__link--not-current">
+              <li class="nav-list__item">
+                <a class="nav-list__link">
                   Магазины
                 </a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link--not-current" href="#">
+                <a class="nav-list__link" href="#">
                   Акции
                 </a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link--not-current"  href="#">
+                <a class="nav-list__link" href="#">
                   Доставка и оплата
                 </a>
               </li>
               <li class="nav-list__item">
-                <a class="nav-list__link nav-list__link--not-current"  href="#">
+                <a class="nav-list__link" href="#">
                   Санкт-Петербург, ул<br>Большая Конюшенная, д 19
                 </a>
               </li>
@@ -52,53 +53,51 @@
                 </a>
               </li>
               <li class="nav-user__item">
-                <a class="nav-user__link">
+                <a class="nav-user__link" href="#">
                   <span class="nav-user__goods">1</span>
-                <span class="visually-hidden" href="#">Корзина.</span>
+                <span class="visually-hidden" >Корзина.</span>
                 </a>
               </li>
             </ul>
           </div>
-        </nav>
-        <nav class="header__nav2 nav2">
-          <ul class="nav2__list nav2-list">
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+          <ul class="nav__list-goods nav-list-goods">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Каталог запчастей
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Каталог ТО
               </a>
             </li>
-            <li class="nav2-list__item nav2-list__item--current">
-              <a class="nav2-list__link nav2-list__link--current">
+            <li class="nav-list-goods__item nav-list-goods__item--current">
+              <a class="nav-list-goods__link nav-list-goods__link--current">
                 Шины
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Диски
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Аккумуляторы
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Автомасла
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Автолампы
               </a>
             </li>
-            <li class="nav2-list__item">
-              <a class="nav2-list__link">
+            <li class="nav-list-goods__item">
+              <a class="nav-list-goods__link">
                 Аксессуары
               </a>
             </li>
@@ -109,53 +108,68 @@
 
       <main class="main">
         <section class="promo">
-          <h1 class="visually-hidden">Предлагаем запчасти на все виды автомобилей.</h1>
-          <img class="promo__image" src="../img/promo.jpg" width="870" height="397" alt="Фото генератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
-          <button class="promo__button-left" type="button">
-            <span class="visually-hidden">Кнопка назад.</span>
-          </button>
-          <button class="promo__button-right" type="button">
-            <span class="visually-hidden">Кнопка вперёд.</span>
-          </button>
-          <div class="promo__promo-wrapper promo-wrapper">
-            <span class="promo-wrapper__action">Акция</span>
-            <span class="promo-wrapper__new-price">200 ₽</span>
-            <span class="promo-wrapper__old-price">500 ₽</span>
-            <a class="promo-wrapper__link" href="#">
-              <img src="../img/lamp.png" width="150" height="187" alt="Фото лампы на белом фоне">
-            </a>
-            <span class="promo-wrapper__name">Лампочка мини...</span>
-            <div class="promo-wrapper__timer countdown">
-              <span class="countdown__text">До конца акции осталось:</span>
-              <div class="countdown__wrapper">
-                <div class="countdown__item">
-                  <span id="days">00</span>
-                  <span class="countdown__label">дней</span>
-                </div>
-                <div class="countdown__item">
-                  <span id="hours">00</span>
-                  <span>:</span>
-                  <span class="countdown__label">часов</span>
-                </div>
-                <div class="countdown__item">
-                  <span id="minutes">00</span>
-                  <span>:</span>
-                  <span class="countdown__label">минут</span>
-                </div>
-                <div class="countdown__item">
-                  <span id="seconds">00</span>
-                  <span class="countdown__label">секунд</span>
+          <h2 class="visually-hidden">Наши предложения и акции.</h2>
+          <div class="promo__slider slider">
+            <h3 class="visually-hidden">Слайдер с текущими предложениями.</h3>
+            <div class="slider__images">
+              <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+              <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+              <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+              <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+              <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
+            </div>
+            <button class="slider__prev-button" type="button">
+              <span class="visually-hidden">Кнопка назад.</span>
+            </button>
+            <button class="slider__next-button" type="button">
+              <span class="visually-hidden">Кнопка вперёд.</span>
+            </button>
+          </div>
+          <div class="promo__action action">
+
+            <div class="action__item">
+              <h3 class="visually-hidden">Автослайдер с текущими акциями.</h3>
+              <span class="action__name">Акция</span>
+              <span class="action__new-price">200 ₽</span>
+              <span class="action__old-price">500 ₽</span>
+              <a class="action__link" href="#">
+                <span class="visually-hidden">Перейти на страницу товара.</span>
+                <img src="../img/lamp.png" width="150" height="187" alt="Фото лампы на белом фоне">
+              </a>
+              <span class="action__product">Лампочка мини...</span>
+              <div class="action__timer countdown">
+                <span class="countdown__text">До конца акции осталось:</span>
+                <div class="countdown__wrapper">
+                  <div class="countdown__item">
+                    <span id="days">00</span>
+                    <span class="countdown__label">дней</span>
+                  </div>
+                  <div class="countdown__item">
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span class="countdown__label">часов</span>
+                  </div>
+                  <div class="countdown__item">
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span class="countdown__label">минут</span>
+                  </div>
+                  <div class="countdown__item">
+                    <span id="seconds">00</span>
+                    <span class="countdown__label">секунд</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
+
+          </div>
         </section>
 
-
       </main>
-
     </div>
+
+  <script src="js/slider.js"></script>
   <script src="js/countdown.js"></script>
   </body>
 </html>

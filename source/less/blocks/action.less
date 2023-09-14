@@ -1,0 +1,119 @@
+.action {
+  position: relative;
+  width: 271px;
+  height: 397px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  border: 1px solid #c4c4c4;
+}
+
+.action__new-price {
+  position: absolute;
+  left: 180px;
+  top: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #ff7931;
+}
+
+.action__old-price {
+  position: absolute;
+  left: 185px;
+  top: 40px;
+  z-index: 1;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 20px;
+  color: #a8a8a8;
+}
+
+.action__name {
+  position: absolute;
+  top: 30px;
+  left: -32px;
+  width: 87px;
+  height: 25px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  transform: rotate(-90deg);
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #9710e9, #fd8d43);
+}
+
+.action__old-price::after {
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: #a8a8a8;
+  transform: rotate(-20grad);
+}
+
+.action__link {
+  position: absolute;
+  left: 50px;
+  top: 53px;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
+}
+
+.action__product {
+  position: absolute;
+  left: 40px;
+  top: 250px;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.countdown {
+  position: absolute;
+  top: 297px;
+  width: 269px;
+  height: 98px;
+  background-color: #f0f0f4;
+  background-image: url("../../img/timer.svg");
+  background-repeat: no-repeat;
+  background-position: 35px 50px;
+}
+
+.countdown__text {
+  display: block;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.countdown__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding-top: 7px;
+  padding-left: 65px;
+}
+
+.countdown__item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.countdown__label {
+  font-size: 10px;
+  color: #c4c4c4;
+}
