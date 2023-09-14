@@ -82,3 +82,34 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.slider__dots-wrapper {
+  position: absolute;
+  display: flex;
+  bottom: 37px;
+  left: 370px;
+}
+
+
+.slider__dot {
+  width: 11px;
+  height: 11px;
+  margin-left: 8px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    opacity: 50%;
+    cursor: pointer;
+  }
+}
+
+.slider__dot--active {
+  background-color: #ffffff;
+
+  &:hover {
+    opacity: 100%;
+    cursor: default;
+  }
+}
