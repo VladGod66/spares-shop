@@ -1,14 +1,14 @@
 //Программа обратного таймера до события
 
 //Определяем дату и время окончания отсчёта обратного таймера
-const targetDate = new Date('2023-10-01T00:00:00');
+const targetDate3 = new Date('2023-10-20T00:00:00');
 
 //Функция однократного расчёта времени до события
 function updateCountdown() {
   //Получаем текущую дату
   const now = new Date();
   //Рассчитываем оставшееся врямя до окончания отсчёта
-  const remainingTime = targetDate - now;
+  const remainingTime = targetDate3 - now;
 
   //Расчитываем сколько полных суток осталось до события
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
@@ -20,13 +20,13 @@ function updateCountdown() {
   const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
   //Вставляем в DOM количество оставшихся суток до события
-  document.getElementById('days').innerText = days.toString().padStart(2, '0');
+  document.getElementById('days-3').innerText = days.toString().padStart(2, '0');
   //Вставляем в DOM количество оставшихся часов до события
-  document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+  document.getElementById('hours-3').innerText = hours.toString().padStart(2, '0');
   //Вставляем в DOM количество оставшихся минут до события
-  document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+  document.getElementById('minutes-3').innerText = minutes.toString().padStart(2, '0');
   //Вставляем в DOM количество оставшихся секунд до события
-  document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+  document.getElementById('seconds-3').innerText = seconds.toString().padStart(2, '0');
 }
 
 // Обновляем счетчик каждую секунду

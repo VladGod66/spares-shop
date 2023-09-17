@@ -3,7 +3,6 @@
   width: 271px;
   height: 397px;
   box-sizing: border-box;
-  margin-left: 30px;
   border: 1px solid #c4c4c4;
 }
 
@@ -78,7 +77,9 @@
   font-weight: bold;
 }
 
-.countdown {
+.countdown,
+.countdown-2,
+.countdown-3 {
   position: absolute;
   top: 297px;
   width: 269px;
@@ -116,4 +117,22 @@
 .countdown__label {
   font-size: 10px;
   color: #c4c4c4;
+}
+
+.action-slider {
+  position: relative;
+  width: 271px;
+  height: 397px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.action__slider {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.action__item {
+  min-width: 271px;
 }
