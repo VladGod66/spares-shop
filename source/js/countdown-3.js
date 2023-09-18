@@ -1,5 +1,9 @@
 //Программа обратного таймера до события
 
+//Находим элемент вывода старой цены и читаем цену
+const oldPrice3 = document.querySelector('.action-3 .action__old-price');
+//Находим элемент вывода новой цены
+let newPrice3 = document.querySelector('.action-3 .action__new-price');
 //Находим элемент вывода сообщения
 const message3 = document.querySelector('.countdown-3 .countdown__text');
 //Находим элемент отображения таймера
@@ -16,6 +20,8 @@ function updateCountdown() {
   const remainingTime = targetDate3 - now;
   //Если акция завершена останавливаем счётчик
   if (remainingTime <= 0) {
+    newPrice3.textContent = oldPrice3.textContent;
+    oldPrice3.style.display = 'none';
     message3.textContent = 'Акция закончилась...';
     timer3.style.display = 'none';
   }
