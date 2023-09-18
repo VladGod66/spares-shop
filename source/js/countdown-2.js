@@ -1,5 +1,10 @@
 //Программа обратного таймера до события
 
+//Находим элемент вывода сообщения
+const message2 = document.querySelector('.countdown-2 .countdown__text');
+//Находим элемент отображения таймера
+const timer2 = document.querySelector('.countdown-2 .countdown__wrapper');
+
 //Определяем дату и время окончания отсчёта обратного таймера
 const targetDate2 = new Date('2023-11-07T00:00:00');
 
@@ -9,6 +14,11 @@ function updateCountdown() {
   const now = new Date();
   //Рассчитываем оставшееся врямя до окончания отсчёта
   const remainingTime = targetDate2 - now;
+  //Если акция завершена останавливаем счётчик
+  if (remainingTime <= 0) {
+    message2.textContent = 'Акция закончилась...';
+    timer2.style.display = 'none';
+  }
 
   //Расчитываем сколько полных суток осталось до события
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
