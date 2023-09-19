@@ -16,6 +16,8 @@ const slideCount = slides.length;
 const interval = 10000;
 //Создаём индекс активного слайда
 let slideIndex = 0;
+//Создаём индекс направления перемещения (1-вперёд, 0-назад)
+let directionIndex = 1;
 //Создаём индекс активной точки индикатора
 let dotIndex = 0;
 
@@ -38,18 +40,43 @@ prevButton.addEventListener('click', () => {
 
 //При клике на кнопку вперёд
 nextButton.addEventListener('click', () => {
-  nextSlide()
-});
-
-//Функция перемещения слайдера на один слайд вперёд
-const nextSlide = () => {
   //Пересчитываем индекс нового активного слайда от 0 до lenght-1
   slideIndex = slideIndex + 1;
   //Если слайд последний
   if (slideIndex >= slideCount) {
     //То переходим к первому слайду
-    slideIndex=0;
+    slideIndex = 0;
   }
+  dotIndex = slideIndex;
+  //Перезапускаем функцию slide для сдвига флекса массива изображений
+  slide();
+  //Перезапускаем функцию thisSlide с текущим индексом псевдомассива для смены активной точки индикатора
+  thisSlide(dotIndex);
+});
+
+//Функция перемещения слайдера на один слайд вперёд/назад
+const nextSlide = () => {
+
+  //Если перемещение слайдов прямое
+  if (directionIndex == 1) {
+    //Увеличиваем индекс показываемого элемента
+  slideIndex = slideIndex + 1;
+  //Если нет
+  } else {
+    //Уменьшаем индекс показываемого элемента
+    slideIndex = slideIndex - 1
+  }
+  //Если элемент последний
+  if (slideIndex >= slideCount-1) {
+    //То меняем направление движения на обратное
+    directionIndex = 0;
+  }
+  //Если элемент первый
+  if (slideIndex <= 0) {
+    //То меняем направление движения на прямое
+    directionIndex = 1;
+  }
+
   dotIndex = slideIndex;
   //Перезапускаем функцию slide для сдвига флекса массива изображений
   slide();
