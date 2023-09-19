@@ -18,11 +18,15 @@ function updateCountdown() {
   const now = new Date();
   //Рассчитываем оставшееся врямя до окончания отсчёта
   const remainingTime = targetDate2 - now;
-  //Если акция завершена останавливаем счётчик
+  //Если акция завершена
   if (remainingTime <= 0) {
+    //Возвращаем доакционную цену
     newPrice2.textContent = oldPrice2.textContent;
+    //Убираем акционную цену
     oldPrice2.style.display = 'none';
+    //Выоводим сообщение об окончании акции
     message2.textContent = 'Акция закончилась...';
+    //Удаляем таймер
     timer2.style.display = 'none';
   }
 
