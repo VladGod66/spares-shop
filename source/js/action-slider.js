@@ -13,6 +13,15 @@ let itemIndex = 0;
 //Создаём индекс направления перемещения (1-вперёд, 0-назад)
 let dirIndex = 1;
 
+//Функция перемещения слайдов (флекса массива элементов) в окне просмотра на заданный слайд
+const slideItem = () => {
+  //Определяем высоту видимой области слайдера в пикселях
+  const imageHeight = sliderItems.clientHeight/items.length;
+  //Рассчитываем сдвиг флекса массива элементов в пикселях
+  const slideMove = itemIndex * imageHeight;
+  //Сдвигаем флекс массива элементов на рассчитаное количество пикселей
+  sliderItems.style.transform = `translateY(${-slideMove}px)`;
+}
 
 //Функция перемещения слайдера на один элемент вперёд/назад
 const nextItem = () => {
@@ -39,20 +48,10 @@ const nextItem = () => {
   slideItem();
 }
 
-//Функция перемещенияслайдов (флекса массива элементов) в окне просмотра
-const slideItem = () => {
-  //Определяем высоту видимой области слайдера в пикселях
-  const imageHeight = sliderItems.clientHeight/items.length;
-  //Рассчитываем сдвиг флекса массива элементов в пикселях
-  const slideMove = itemIndex * imageHeight;
-  //Сдвигаем флекс массива элементов на рассчитаное количество пикселей
-  sliderItems.style.transform = `translateY(${-slideMove}px)`;
-}
-
 //При загрузке окна сайта запускаем функцию перемещения слайдов
 window.addEventListener('load', () => {
   slideItem();
 });
 
-//Функция автоматического перелистывания слайдов
+//Запускаем встроенную в браузер функцию автоматического перелистывания слайдов
 setInterval(() => {nextItem()}, timeInterval)
