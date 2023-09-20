@@ -71,11 +71,11 @@ const nextSlide = () => {
   //Если перемещение слайдов прямое
   if (directionIndex == 1) {
     //Увеличиваем индекс показываемого слайда
-  slideIndex = slideIndex + 1;
+  slideIndex++;
   //Если нет
   } else {
     //Уменьшаем индекс показываемого слайда
-    slideIndex = slideIndex - 1
+    slideIndex--
   }
   //Запускаем суперфункцию смены слайда
   changeSlide(slideIndex);
@@ -97,7 +97,7 @@ nextButton.addEventListener('click', () => {
     slideIndex = 0;
   } else {
     //Увеличиваем индекс нового активного слайда
-    slideIndex = slideIndex + 1;
+    slideIndex++;
   }
   //Запускаем суперфункцию смены слайда
   changeSlide(slideIndex);
@@ -111,7 +111,7 @@ prevButton.addEventListener('click', () => {
     slideIndex = slideCount-1;
   } else {
     //Уменьшаем индекс слайда на единицу
-    slideIndex = slideIndex - 1;
+    slideIndex--;
   }
   //Запускаем суперфункцию смены слайда
   changeSlide(slideIndex);
