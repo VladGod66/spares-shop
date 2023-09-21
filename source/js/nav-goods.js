@@ -3,9 +3,7 @@
 //Находим список групп товаров в навигации
 const navGoods = document.querySelector('.list-goods');
 //Создаём массивоподобную коллекцию классов групп товаров
-const goods = document.querySelectorAll('.goods__link');
-//Определяем количество групп товоров
-const goodsCount = goods.length;
+const goods = navGoods.querySelectorAll('.goods__link');
 
 //Функция смены активного элемента меню
 const changeActivElement = (index) => {

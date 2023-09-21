@@ -62,42 +62,42 @@
           </div>
           <ul class="nav__list-goods list-goods">
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Каталог запчастей
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Каталог ТО
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link goods__link--current">
+              <a class="goods__link goods__link--current" href="#">
                 Шины
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Диски
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link"href="#" >
                 Аккумуляторы
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Автомасла
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Автолампы
               </a>
             </li>
             <li class="list-goods__item goods">
-              <a class="goods__link">
+              <a class="goods__link" href="#">
                 Аксессуары
               </a>
             </li>
@@ -246,22 +246,70 @@
 
         <section class="search">
           <h3 class="visually-hidden">Поиск</h3>
-            <div class="search__wrapper">
-              <ul class="search__list list">
-                <li class="list__item item">
-                  <a class="item__link">Поиск по Vin</a>
-                </li>
-                <li class="list__item item">
-                  <a class="item__link item__link--active">Поиск по марке</a>
-                </li>
-                <li class="list__item item">
-                  <a class="item__link">Поиск по названию товара</a>
-                </li>
-                <li class="list__item item">
-                  <a class="item__link">Поиск по partnamber</a>
-                </li>
-              </ul>
+          <ul class="search__list">
+            <li class="search__item">
+              <a class="search__link" href="#search-vin">Поиск по Vin</a>
+            </li>
+            <li class="search__item">
+              <a class="search__link search__link--active" href="#search-type">Поиск по марке</a>
+            </li>
+            <li class="serch__item">
+              <a class="search__link" href="#search-name">Поиск по названию товара</a>
+            </li>
+            <li class="search__item">
+              <a class="search__link" href="#search-partnamber">Поиск по partnamber</a>
+            </li>
+          </ul>
+          <div class="search-blocks">
+            <div class="search__request" id="search-vin">
+              <h3 class="visually-hidden">Поиск по vin.</h3>
+              <form class="search__form" method="post" action="#">
+                <label>
+                  <span class="visually-hidden">Введите vin код.</span>
+                  <input class="search__field" type="search" name="search__input" placeholder="Введите vin код автмобиля" required>
+                </label>
+                <button class="search__button" type="submit">
+                  <span class="search__button-text">Искать</span>
+                </button>
+              </form>
             </div>
+            <div class="search__request search__request--active" id="search-type">
+              <h3 class="visually-hidden">Поиск по марке автомобиля.</h3>
+              <form class="search__form" method="post" action="#">
+                <label>
+                  <span class="visually-hidden">Введите марку автомобиля.</span>
+                  <input class="search__field" type="search" name="search__input" placeholder="Введите марку автомобиля" required>
+                </label>
+                <button class="search__button" type="submit">
+                  <span class="search__button-text">Искать</span>
+                </button>
+              </form>
+            </div>
+            <div class="search__request" id="search-name">
+              <h3 class="visually-hidden">Поиск по названию товара.</h3>
+              <form class="search__form" method="post" action="#">
+                <label>
+                  <span class="visually-hidden">Введите название товара.</span>
+                  <input class="search__field" type="search" name="search__input" placeholder="Введите название товара" required>
+                </label>
+                <button class="search__button" type="submit">
+                  <span class="search__button-text">Искать</span>
+                </button>
+              </form>
+            </div>
+            <div class="search__request" id="search-partnamber">
+              <h3 class="visually-hidden">Поиск по partnamber.</h3>
+              <form class="search__form" method="post" action="#">
+                <label>
+                  <span class="visually-hidden">Введите partnamber.</span>
+                  <input class="search__field" type="search" name="search__input" placeholder="Введите partnamber товара" required>
+                </label>
+                <button class="search__button" type="submit">
+                  <span class="search__button-text">Искать</span>
+                </button>
+              </form>
+            </div>
+          </div>
         </section>
 
       </main>
@@ -273,5 +321,6 @@
   <script src="js/countdown.js"></script>
   <script src="js/countdown-2.js"></script>
   <script src="js/countdown-3.js"></script>
+  <script src="js/search.js"></script>
   </body>
 </html>
