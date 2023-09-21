@@ -10,7 +10,7 @@ const searchBloks = document.querySelector('.search-blocks');
 const blocks = searchBloks.querySelectorAll('.search__request')
 
 //Функция смены активного элемента поиска
-const changeActivCat = (index) => {
+const changeActiveCat = (index) => {
   //Для всех ссылок на категории поиска
   for (let search__link of categories) {
     //Удаляем класс активной категории поиска
@@ -34,7 +34,7 @@ categories.forEach((search__link, index) => {
   //При клике на любой пункт меню товаров получаем индекс кликнутого пункта меню
   search__link.addEventListener('click', () => {
   //Запускаем функцию смены активной группы
-  changeActivCat(index);
+  changeActiveCat(index);
   })
 })
 
