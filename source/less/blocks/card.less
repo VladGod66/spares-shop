@@ -1,0 +1,178 @@
+.card {
+  position: relative;
+}
+
+.card__type {
+  position: absolute;
+  top: 30px;
+  left: -32px;
+  width: 87px;
+  height: 25px;
+  box-sizing: border-box;
+  padding-top: 2px;
+  transform: rotate(-90deg);
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #9710e9, #fd8d43);
+}
+
+.card__button-likes {
+  position: absolute;
+  width: 27px;
+  height: 25px;
+  border: none;
+  top: 20px;
+  right: 20px;
+  content: "";
+  background-color: #ffffff;
+  background-image: url("../../img/like.png");
+  cursor: pointer;
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.card__icon-winter {
+  position: absolute;
+  top: 17px;
+  right: 60px;
+  width: 31px;
+  height: 31px;
+  content: "";
+  background-image: url("../../img/winter.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__icon-summer {
+  position: absolute;
+  top: 17px;
+  right: 60px;
+  width: 31px;
+  height: 31px;
+  content: "";
+  background-image: url("../../img/summer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+}
+
+.card__name {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 230px;
+  text-align: center;
+  margin: 0;
+}
+
+.card__price {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.not-display {
+  display: none;
+}
+
+.card__not-available {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card__button-message {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff7931;
+  text-decoration: underline;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 50%;
+  }
+}
+
+.card__button-viewing {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  width: 230px;
+  height: 61px;
+  opacity: 80%;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 5px rgba(196, 196, 196, 0.3);
+  transform: translate(-50%, 0);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 95%;
+  }
+
+  &:active {
+    opacity: 80%;
+  }
+}
+
+.card__button-viewing-text {
+  font-family: "Barlow", "Arial", sans-serif;
+  font-size: 20px;
+}
+
+.card__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  content: "";
+  background-image: url("../../img/bascket2.svg");
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
+}

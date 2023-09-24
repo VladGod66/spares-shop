@@ -119,10 +119,10 @@
               <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
               <img src="../img/promo.jpg" width="870" height="397" alt="Фото автогенератора на фиолетово-оранжевом градиенте и надпись: 'Запчасти на все виды автомобилей'.">
             </div>
-            <button class="slider__prev-button" type="button">
+            <button class="slider__prev-button" type="button" title="Назад">
               <span class="visually-hidden">Кнопка назад.</span>
             </button>
-            <button class="slider__next-button" type="button">
+            <button class="slider__next-button" type="button" title="Вперёд">
               <span class="visually-hidden">Кнопка вперёд.</span>
             </button>
             <div class="slider__dots-wrapper">
@@ -137,9 +137,8 @@
 
           <div class="promo__action action-slider">
             <h3 class="visually-hidden">Автослайдер с текущими акциями.</h3>
-            <div class="action__slider">
-
-              <div class="action__item action">
+            <ul class="action__slider">
+              <li class="action__item action">
                 <span class="action__name">Акция</span>
                 <span class="action__new-price">200 ₽</span>
                 <span class="action__old-price">500 ₽</span>
@@ -171,9 +170,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="action__item action-2">
+              </li>
+              <li class="action__item action-2">
                 <span class="action__name">Акция</span>
                 <span class="action__new-price">400 ₽</span>
                 <span class="action__old-price">700 ₽</span>
@@ -205,9 +203,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="action__item action-3">
+              </li>
+              <li class="action__item action-3">
                 <span class="action__name">Акция</span>
                 <span class="action__new-price">300 ₽</span>
                 <span class="action__old-price">600 ₽</span>
@@ -239,25 +236,25 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </section>
 
-        <section class="search">
+        <section class="search" id="#search">
           <h3 class="visually-hidden">Поиск</h3>
           <ul class="search__list">
             <li class="search__item">
-              <a class="search__link" href="#search-vin">Поиск по Vin</a>
+              <a class="search__link" href="#search">Поиск по Vin</a>
             </li>
             <li class="search__item">
-              <a class="search__link search__link--active" href="#search-type">Поиск по марке</a>
+              <a class="search__link search__link--active" href="#search">Поиск по марке</a>
             </li>
             <li class="serch__item">
-              <a class="search__link" href="#search-name">Поиск по названию товара</a>
+              <a class="search__link" href="#search">Поиск по названию товара</a>
             </li>
             <li class="search__item">
-              <a class="search__link" href="#search-partnamber">Поиск по partnamber</a>
+              <a class="search__link" href="#search">Поиск по partnamber</a>
             </li>
           </ul>
           <div class="search-blocks">
@@ -312,36 +309,221 @@
           </div>
         </section>
 
-        <section class="categories">
+        <section class="categories" id="categories">
           <h3 class="visually-hidden">Перейти в категорию товаров.</h3>
           <div class="categories-card categories-card--chemistry">
             <h4 class="categories-card__title">Автохимия</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
           <div class="categories-card categories-card--tyres">
             <h4 class="categories-card__title">Шины и диски</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
           <div class="categories-card categories-card--tools">
             <h4 class="categories-card__title">Инструменты</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
           <div class="categories-card categories-card--parts">
             <h4 class="categories-card__title">Запчасти на ТО</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
           <div class="categories-card categories-card--electronics">
             <h4 class="categories-card__title">Электроника</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
           <div class="categories-card categories-card--other">
             <h4 class="categories-card__title">Аксессуары<br>и другое</h4>
-            <a class="categories-card__link" href="#">Перейти ></a>
+            <a class="categories-card__link" href="#categories">Перейти ></a>
           </div>
         </section>
 
-        <section class="popular">
-          
+        <section class="popular" id="popular">
+          <h3 class="popular__title">Популярные товары</h3>
+          <ul class="popular__list">
+            <li class="popular__item">
+              <a class="popular__link popular__link--current" href="#popular">запчасти</a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#popular">автохимия</a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#popular">шины и диски</a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#popular">автоэлектроника</a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#popular">инструменты</a>
+            </li>
+            <li class="popular__item">
+              <a class="popular__link" href="#popular">аксессуары и другое</a>
+            </li>
+          </ul>
+          <div class="popular__slider">
+            <button class="popular__slider-prev-button" type="button" title="Назад">
+              <span class="visually-hidden">Кнопка назад.</span>
+            </button>
+            <div class="popular__slider-wrapper">
+            <ul class="popular__list2">
+              <li class="popular__card card">
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <img class="card__img" src="../img/goods1.png" width="230" height="215" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Ремень</p>
+                <p class="card__price">440 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <span class="card__type">Распродажа</span>
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <span class="card__icon-winter"></span>
+                <img class="card__img" src="../img/goods2.png" width="151" height="81" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Шина 205/80 R16 104Q Misha RF Power Grum</p>
+                <p class="card__price">11 680 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <button class="card__button-likes" type="button"title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <img class="card__img" src="../img/goods3.png" width="232" height="174" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Фара Nokian 2025</p>
+                <p class="card__price">680 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <span class="card__type">Распродажа</span>
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <span class="card__icon-summer"></span>
+                <img class="card__img" src="../img/goods4.png" width="151" height="181" alt="">
+                <button class="card__button-viewing card__button-viewing--none" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Шина 245/60 R18 105T Contyther Crosh Conta...</p>
+                <p class="card__price not-display">12 440 ₽</p>
+                <p class="card__not-available">нет в наличии</p>
+                <button class="card__button-message" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button not-display" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <button class="card__button-likes" type="button"title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <img class="card__img" src="../img/goods3.png" width="232" height="174" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Фара Nokian 2025</p>
+                <p class="card__price">680 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <img class="card__img" src="../img/goods1.png" width="230" height="215" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Ремень</p>
+                <p class="card__price">440 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <span class="card__type">Распродажа</span>
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <span class="card__icon-winter"></span>
+                <img class="card__img" src="../img/goods2.png" width="151" height="81" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Шина 205/80 R16 104Q Misha RF Power Grum</p>
+                <p class="card__price">11 680 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+              <li class="popular__card card">
+                <button class="card__button-likes" type="button" title="Добавить в избранное">
+                  <span class="visually-hidden" >Добавить в избранное.</span>
+                </button>
+                <img class="card__img" src="../img/goods1.png" width="230" height="215" alt="">
+                <button class="card__button-viewing" type="button">
+                  <span class="card__button-viewing-text">быстрый просмотр</span>
+                </button>
+                <p class="card__name">Ремень</p>
+                <p class="card__price">440 ₽</p>
+                <p class="card__not-available not-display">нет в наличии</p>
+                <button class="card__button-message not-display" type="submit">
+                  Сообщить о поступлении
+                </button>
+                <button class="card__button" type="button" title="Добавить в корзину">
+                  <span class="visually-hidden" >Добавить в корзину.</span>
+                </button>
+              </li>
+            </ul>
+            </div>
+            <button class="popular__slider-next-button" type="button" title="Вперёд">
+              <span class="visually-hidden">Кнопка вперёд.</span>
+            </button>
+            <button class="popular__slider-more-button" type="button">
+              <span class="popular__slider-text-button">Смотреть еще</span>
+            </button>
+          </div>
         </section>
 
       </main>
@@ -354,5 +536,7 @@
   <script src="js/countdown-2.js"></script>
   <script src="js/countdown-3.js"></script>
   <script src="js/search.js"></script>
+  <script src="js/popular.js"></script>
+  <script src="js/popular-slider.js"></script>
   </body>
 </html>

@@ -1,3 +1,24 @@
+.action-slider {
+  position: relative;
+  width: 271px;
+  height: 397px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+
+.action__slider {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.action__item {
+  min-width: 271px;
+}
+
 .action,
 .action-2,
 .action-3 {
@@ -120,22 +141,4 @@
 .countdown__label {
   font-size: 10px;
   color: #c4c4c4;
-}
-
-.action-slider {
-  position: relative;
-  width: 271px;
-  height: 397px;
-  margin-left: 30px;
-  overflow: hidden;
-}
-
-.action__slider {
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.5s ease-in-out;
-}
-
-.action__item {
-  min-width: 271px;
 }
