@@ -3,7 +3,7 @@
 //Находим контейнер слайдера акций
 const sliderItems = document.querySelector('.action__slider');
 //Создаём массив из найденных в контейнере слайдера элементов
-const items = Array.from(sliderItems.querySelectorAll('.action__item'));
+const items = sliderItems.querySelectorAll('.action__item');
 //Определяем количество элементов в массиве
 const itemCount = items.length;
 //Определяем интервал автоматического перелистывания элементов

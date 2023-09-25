@@ -9,7 +9,7 @@ const nextButton = document.querySelector('.slider__next-button');
 //Создаём массивоподобную коллекцию классов точек индикатора
 const dots = document.querySelectorAll('.slider__dot');
 //Создаём массив из найденных в контейнере слайдера изображений
-const slides = Array.from(sliderImages.querySelectorAll('img'));
+const slides = sliderImages.querySelectorAll('img');
 //Определяем количество изображений в массиве
 const slideCount = slides.length;
 //Определяем интервал автоматического перелистывания слайдов
