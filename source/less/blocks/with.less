@@ -1,0 +1,153 @@
+.with {
+  margin-bottom: 95px;
+}
+
+.with__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.with__list {
+  position: relative;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.with__item {
+  padding-right: 35px;
+}
+
+.with__link {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #48494d;
+
+  &:hover {
+    color: #ff7931;
+  }
+
+  &:active {
+    color: #48494d;
+  }
+}
+
+.with__link--current {
+  position: relative;
+  color: #000000;
+  cursor: default;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: #ff7931;
+  }
+}
+
+.with__slider {
+  position: relative;
+}
+
+.with__slider-prev-button {
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../../img/arrow-left-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -50px;
+  box-shadow: 0 0 5px 5px rgba(196, 196, 196, 0.2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d7d9df;
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
+}
+
+.with__slider-wrapper {
+  width: 1170px;
+  overflow: hidden;
+}
+
+.with__list2 {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.with__card {
+  flex-shrink: 0;
+  width: 270px;
+  height: 375px;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+
+  &:hover {
+    box-shadow: 0 0 5px 5px rgba(196, 196, 196, 0.3);
+  }
+
+  &:hover .card__name,
+  &:hover .card__price {
+    color: #ff7931;
+  }
+
+  &:hover .card__button-viewing {
+    display: block;
+  }
+
+  &:hover .card__button-viewing--none {
+    display: none;
+  }
+}
+
+.with__slider-next-button {
+  position: absolute;
+  width: 40px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../../img/arrow-right-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -55px;
+  box-shadow: 0 0 5px 5px rgba(196, 196, 196, 0.2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d7d9df;
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
+}
