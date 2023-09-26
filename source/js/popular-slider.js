@@ -25,18 +25,31 @@ const card = () => {
   sliderCards.style.transform = `translateX(${-slideOffset}px)`;
 }
 
+//Если активный слайд первый
+if (cardIndex == 0) {
+  //Скрываем кнопку назад
+  prevButt.classList.add('not-display');
+}
+//Если активный слайд последний или больше
+if (cardIndex >= cardsCount-4) {
+  //Скрываем кнопку вперёд
+  nextButt.classList.add('not-display');
+  //Скрываем кнопку смотреть ещё
+  moreBatt.classList.add('not-display');
+}
+
 //При клике на кнопку вперёд
 nextButt.addEventListener('click', () => {
   //Если активный слайд последний или больше
   if (cardIndex >= cardsCount-4) {
-      //Деактивируем курсор на кнопке вперёд
-      nextButt.style.cursor = 'default';
+      //Скрываем кнопку вперёд
+      nextButt.classList.add('not-display');
       //Если нет
     } else {
     //Увеличиваем индекс нового активного слайда на единицу
     cardIndex++;
-    //Активируем курсор на кнопке назад
-    prevButt.style.cursor = 'pointer';
+    //Показываем кнопку назад
+    prevButt.classList.remove('not-display');
   }
   //Запускаем функцию смены слайда
   card(cardIndex);
@@ -46,16 +59,21 @@ nextButt.addEventListener('click', () => {
 prevButt.addEventListener('click', () => {
   //Если активный слайд первый
   if (cardIndex == 0) {
-    //Деактивируем курсор на кнопке назад
-    prevButt.style.cursor = 'default';
+    //Скрываем кнопку назад
+    prevButt.classList.add('not-display');
   } else {
     //Уменьшаем индекс нового активного слайда на единицу
     cardIndex--;
-    //Активируем курсор на кнопке вперёд
-    nextButt.style.cursor = 'pointer';
+    //Показываем кнопку вперёд
+    nextButt.classList.remove('not-display');
   }
   //Запускаем функцию смены слайда
   card(cardIndex);
+  //Если активный слайд первый
+if (cardIndex == 0) {
+  //Скрываем кнопку назад
+  prevButt.classList.add('not-display');
+}
 });
 
 //При клике на кнопку показать еще
@@ -64,15 +82,25 @@ moreBatt.addEventListener('click', () => {
   if (cardIndex < cardsCount - 4) {
     //Передвигаем слайдер на 4 слайда вперёд
     cardIndex = cardIndex + 4;
-    //Активируем курсор на кноаке назад
-    prevButt.style.cursor = 'pointer';
+    //Показываем кнопку назад
+    prevButt.classList.remove('not-display');
     //Если в последней
   } else {
     //Ставим на начало
     cardIndex = 0;
-    //Активируем курсор на кнопке вперёд
-    nextButt.style.cursor = 'pointer';
+    //Показываем кнопку вперёд
+    nextButt.classList.remove('not-display');
   }
   //Запускаем функцию смены слайда
   card(cardIndex);
+  //Если активный слайд последний или больше
+  if (cardIndex >= cardsCount-4) {
+    //Скрываем кнопку вперёд
+    nextButt.classList.add('not-display');
+  }
+  //Если активный слайд первый
+if (cardIndex == 0) {
+  //Скрываем кнопку назад
+  prevButt.classList.add('not-display');
+}
 });

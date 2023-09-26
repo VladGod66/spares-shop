@@ -23,35 +23,55 @@ const withCard = () => {
   sliderWithCards.style.transform = `translateX(${-slideOffset}px)`;
 }
 
+//Если активный слайд первый
+if (cardIndex == 0) {
+  //Скрываем кнопку назад
+  prevWithButt.classList.add('not-display');
+}
+//Если активный слайд последний или больше
+if (withCardIndex >= withCardsCount-4) {
+  //Скрываем кнопку вперёд
+  nextWithButt.classList.add('not-display');
+}
+
 //При клике на кнопку вперёд
 nextWithButt.addEventListener('click', () => {
   //Если активный слайд последний или больше
   if (withCardIndex >= withCardsCount-4) {
-      //Деактивируем курсор на кнопке вперёд
-      nextWithButt.style.cursor = 'default';
+      //Скрываем кнопку вперёд
+      nextWithButt.classList.add('not-display');
       //Если нет
     } else {
     //Увеличиваем индекс нового активного слайда на единицу
     withCardIndex++;
-    //Активируем курсор на кнопке назад
-    prevWithButt.style.cursor = 'pointer';
+    //Показываем кнопку назад
+    prevWithButt.classList.remove('not-display');
   }
   //Запускаем функцию смены слайда
   withCard(withCardIndex);
+  if (withCardIndex >= withCardsCount-4) {
+    //Скрываем кнопку вперёд
+    nextWithButt.classList.add('not-display');
+  }
 });
 
 //При клике на кнопку назад
 prevWithButt.addEventListener('click', () => {
   //Если активный слайд первый
   if (withCardIndex == 0) {
-    //Деактивируем курсор на кнопке назад
-    prevWithButt.style.cursor = 'default';
+    //Скрываем кнопку назад
+    prevWithButt.classList.add('not-display');
   } else {
     //Уменьшаем индекс нового активного слайда на единицу
     withCardIndex--;
-    //Активируем курсор на кнопке вперёд
-    nextWithButt.style.cursor = 'pointer';
+    //Показываем кнопку вперёд
+    nextWithButt.classList.remove('not-display');
   }
   //Запускаем функцию смены слайда
   withCard(withCardIndex);
+  //Если активный слайд первый
+  if (withCardIndex == 0) {
+  //Скрываем кнопку назад
+    prevWithButt.classList.add('not-display');
+}
 });
