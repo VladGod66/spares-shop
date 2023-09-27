@@ -79,12 +79,25 @@
 }
 
 .nav-user__item:nth-child(1) {
+  position: relative;
   width: 27px;
   height: 24px;
   padding-right: 25px;
   background-image: url("../../img/like.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.nav-user__likes {
+  position: absolute;
+  top: 5px;
+  left: 27px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #ff7931;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .nav-user__item:nth-child(2) {
