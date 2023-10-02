@@ -16,13 +16,13 @@ withLikes.forEach((with__card__buttonlikes, index) => {
     //Если лайка нет
     if (withLikesOn[index] == 0) {
       //Меняем сердечко иконки лайка на окрашенную
-      withLikes[index].style.backgroundImage = 'url("../../img/like-on.svg")';
+      withLikes[index].style.backgroundImage = 'url("../../img/icons/like-on.svg")';
       //Присваеваем этой  иконке статус: лайк есть
       withLikesOn[index] = 1;
     //Если лайк есть
   } else {
     //Меняем сердечко иконки лайка на неокрашенную
-    withLikes[index].style.backgroundImage = 'url("../../img/like-off.svg")';
+    withLikes[index].style.backgroundImage = 'url("../../img/icons/like-off.svg")';
     //Присваеваем этой  иконке статус: лайка нет
     withLikesOn[index] = 0;
   }
