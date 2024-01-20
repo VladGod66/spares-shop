@@ -10,7 +10,7 @@ const message3 = document.querySelector('.countdown-3 .countdown__text');
 const timer3 = document.querySelector('.countdown-3 .countdown__wrapper');
 
 //Определяем дату и время окончания отсчёта обратного таймера
-const targetDate3 = new Date('2023-11-21T00:00:00');
+const targetDate3 = new Date('2024-03-19T00:00:00');
 
 //Функция однократного расчёта времени до события
 function updateCountdown() {
